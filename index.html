@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f9a5cdce9.js" crossorigin="anonymous"></script>
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-inter">
+    <header>
+        <nav class="md:flex justify-around  py-8">
+            <img class="mx-auto md:m-0" src="images/Logo.png" alt="">
+            <button onclick="handleSorting()" class="ml-10 md:ml-0 mt-4 md:mt-0 bg-[#25252533] px-4 py-1 rounded-md text-black mr-24">Sort by view</button>
+            <button onclick="handleBlog()" class=" bg-[#FF1F3D] px-4 py-1 rounded-md text-white">Blog</button>
+        </nav>
+        <hr class="mx-48">
+    </header>
+    <main>
+        <!-- tab section -->
+        <section class="w-full">
+            <div class=" tabs p-5 w-8/12 m-auto text-center flex justify-center gap-8" id="tab-container">
+                <!-- <a class="tab bg-[#25252533] px-4 rounded-sm">Tab 1</a> -->
+            </div>
+        </section>
+
+        <!-- view section -->
+        <section class="p-6">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- card-1 -->
+                <!-- <div class="card1">
+                    <img src="images/pic.jpg" alt="">
+                    <p class="bg-black text-white relative max-w-full rounded-sm text-center px-2 bottom-6 left-64 text-[10px]">3hrs 56min ago</p>
+                    <div class="flex mt-5">
+                        <div>
+                            <div class="avatar">
+                                <div class="rounded-full w-14">
+                                    <img class="" src="images/pp.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-auto ml-3 mt-2">
+                            <h3 class="font-bold">Laugh at My Pain</h3>
+                            <div class="flex">
+                                <p class="text-[#171717B2] text-sm mr-1">Kevin Hart</p>
+                                <img src="images/verified.png" alt="">
+                            </div>
+                            <p class="text-[#171717B2] text-sm">1.1K Views</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div id="vacant-container" class="text-center mt-32 mx-auto">
+                <!-- <img class="mx-auto" src="images/Icon.png" alt="">
+                <h3 class="font-bold text-3xl mt-4">Oops!! Sorry, There is no <br> content here</h3> -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

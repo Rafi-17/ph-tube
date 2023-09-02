@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answers</title>
+</head>
+
+<body>
+    <h2>Qu-1: Discuss the scope of var, let, and const</h2>
+    <p>
+        In JavaScript, the scope of variables declared with var, let, and const determines where these variables can be
+        accessed and modified within code. <br><br>
+        <b>Var:</b> Variables declared with var are hoisted, which means they are moved to the top of their containing function or global scope during the compilation phase. However, only the variable declaration is hoisted, not the initialization. Also variables declared with var have function scope. This means they are only accessible within the function in which they are defined. <br><br>
+        <b>Let:</b> Unlike var, variables declared with let are not hoisted to the top of their containing block.Variables declared with let have block scope, meaning they are only accessible within the block in which they are defined. A block can be a loop, conditional statement, or any pair of curly braces {}. <br><br>
+        <b>Const:</b> There is also no hoisting in const. Variables declared with const are fixed while initialization. They cannot be re-initialized. Const have also block scope like let.
+    </p>
+    <h2>Qu-2: Tell us the use cases of null and undefined</h2>
+    <p>
+        'null' and 'undefined' are two distinct primitive values with different use cases.
+        null: null means that a variable is empty or has no value.
+        undefined: Variables that are declared but not initialized those give undefined value. Also when a function is called with fewer arguments the parameter in the function doesn't get value that variable has also a value of undefined. And when the property of an object is not found, the value of that property gives undefined value.
+    </p>
+    <h2>Qu-3: What do you mean by REST API?</h2>
+    <p>
+        REST API is an architectural style and a set of constraints for designing and interacting with web services or web resources. The key principles of a REST API include:
+        <ul>
+            <li>Statelessness: Each request from a client to a server must contain all the information needed to understand and process the request.</li>
+            <li>Client-Server Architecture: REST separates the client and server concerns. The client is responsible for the user interface and user experience, while the server is responsible for processing requests, managing resources, and storing data.</li>
+            <li>Uniform Interface: A REST API should have a consistent and well-defined set of operations that apply uniformly to all resources.</li>
+            <li>Resource-Based: Resources are the core abstractions in a RESTful API. Resources are identified by URLs (Uniform Resource Locators) and can represent data entities, such as users, products, or articles.</li>
+        </ul>
+    </p>
+</body>
+
+</html>
